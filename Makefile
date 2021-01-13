@@ -43,4 +43,4 @@ composer-install:
 
 ## cc:		Clear symfony cache
 cc:
-	@docker-compose exec php_training_bus apps/TrainingBusWeb/bin/console cache:clear
+	@docker-compose exec php_training_bus php apps/TrainingBusWeb/bin/console cache:clear
