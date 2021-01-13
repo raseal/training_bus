@@ -12,4 +12,8 @@
         "symfony/yaml": "^5.2",
         "symfony/console": "^5.2"
     }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
 }
