@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace TrainingBus\Shared\Infrastructure\Bus\Query;
+namespace Shared\Infrastructure\Bus\Query;
 
 use Symfony\Component\Messenger\HandleTrait;
 use Symfony\Component\Messenger\MessageBusInterface;
-use TrainingBus\Shared\Domain\Bus\Query\Query;
-use TrainingBus\Shared\Domain\Bus\Query\QueryBus;
-use TrainingBus\Shared\Domain\Bus\Query\QueryResponse;
+use Shared\Domain\Bus\Query\Query;
+use Shared\Domain\Bus\Query\QueryBus;
+use Shared\Domain\Bus\Query\QueryResponse;
 
 class SymfonyQueryBus implements QueryBus
 {

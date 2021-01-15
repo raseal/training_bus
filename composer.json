@@ -2,6 +2,7 @@
     "autoload": {
         "psr-4": {
             "TrainingBus\\": "src/TrainingBus",
+            "Shared\\": "src/Shared",
             "TrainingBusWeb\\": "apps/TrainingBusWeb/src"
         }
     },

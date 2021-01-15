@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TrainingBus\Shared\Domain\Bus\Query;
+namespace Shared\Domain\Bus\Query;
 
 interface QueryHandler
 {
