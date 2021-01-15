@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace TrainingBus\RollDice\Infrastructure;
 
-use TrainingBus\RollDice\Domain\DiceRepository;
+use TrainingBus\RollDice\Domain\DiceRoller;
 use TrainingBus\RollDice\Domain\ValueObjects\DiceSides;
 
-class DiceRepositoryLocal implements DiceRepository
+class PHPDiceRoller implements DiceRoller
 {
     private const MINIMUM_POINT = 1;
 

@@ -7,15 +7,14 @@ namespace TrainingBus\RollDice\Application;
 use Shared\Domain\Bus\Query\Query;
 use Shared\Domain\Bus\Query\QueryHandler;
 use Shared\Domain\Bus\Query\QueryResponse;
-use Shared\Infrastructure\Bus\Query\QueryHandlerWrapper;
-use TrainingBus\RollDice\Domain\DiceRepository;
+use TrainingBus\RollDice\Domain\DiceRoller;
 use TrainingBus\RollDice\Domain\ValueObjects\DiceSides;
 
-class RollDiceQueryHandler extends QueryHandlerWrapper implements QueryHandler
+class RollDiceQueryHandler implements QueryHandler
 {
-    private DiceRepository $dice_repository;
+    private DiceRoller $dice_repository;
 
-    public function __construct(DiceRepository $a_dice_repository)
+    public function __construct(DiceRoller $a_dice_repository)
     {
         $this->dice_repository = $a_dice_repository;
     }

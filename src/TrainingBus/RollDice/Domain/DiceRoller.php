@@ -6,7 +6,7 @@ namespace TrainingBus\RollDice\Domain;
 
 use TrainingBus\RollDice\Domain\ValueObjects\DiceSides;
 
-interface DiceRepository
+interface DiceRoller
 {
     public function roll(DiceSides $sides) : int;
 }
