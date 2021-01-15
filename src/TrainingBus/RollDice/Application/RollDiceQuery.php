@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace TrainingBus\RollDice\Application;
 
-class RollDiceQuery
+use Shared\Domain\Bus\Query\Query;
+
+class RollDiceQuery implements Query
 {
     private int $side_number;
 

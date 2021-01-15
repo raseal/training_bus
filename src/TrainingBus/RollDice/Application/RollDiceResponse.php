@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace TrainingBus\RollDice\Application;
 
-class RollDiceResponse
+use Shared\Domain\Bus\Query\QueryResponse;
+
+class RollDiceResponse implements QueryResponse
 {
     private int $result;
 

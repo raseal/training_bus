@@ -21,3 +21,5 @@ services:
   # please note that last definitions always *replace* previous ones
   TrainingBus\:
     resource: '../../../src/TrainingBus/'
+  Shared\:
+    resource: '../../../src/Shared/'
