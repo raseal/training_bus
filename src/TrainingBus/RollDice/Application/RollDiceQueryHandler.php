@@ -12,11 +12,11 @@ use TrainingBus\RollDice\Domain\ValueObjects\DiceSides;
 
 class RollDiceQueryHandler implements QueryHandler
 {
-    private DiceRoller $dice_repository;
+    private DiceRoller $dice_roller;
 
-    public function __construct(DiceRoller $a_dice_repository)
+    public function __construct(DiceRoller $a_dice_roller)
     {
-        $this->dice_repository = $a_dice_repository;
+        $this->dice_roller = $a_dice_roller;
     }
 
     public function __invoke(RollDiceQuery $query) : QueryResponse
@@ -27,7 +27,7 @@ class RollDiceQueryHandler implements QueryHandler
     public function exec(Query $query): QueryResponse
     {
         $sides = new DiceSides($query->sideNumber());
-        $result = $this->dice_repository->roll($sides);
+        $result = $this->dice_roller->roll($sides);
 
         return new RollDiceResponse($result);
     }
