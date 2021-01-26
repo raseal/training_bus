@@ -17,7 +17,7 @@ class RollDiceController
         $this->query_bus = $a_query_bus;
     }
 
-    public function index(): Response
+    public function roll(): Response
     {
         $query = new RollDiceQuery(6);
 

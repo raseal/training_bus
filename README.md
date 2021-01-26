@@ -16,6 +16,6 @@ All interactions are available via browser at http://localhost:8000
 
 | Route | Description | Used bus  |
 | :---: | :---------: | :-------: |
-| /     | Roll dice   | Query bus |
+| /roll | Roll dice   | Query bus |
 
 
