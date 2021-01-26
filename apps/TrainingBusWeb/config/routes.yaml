@@ -1,3 +1,7 @@
 roll:
     path: /roll
     controller: TrainingBusWeb\Controller\RollDiceController::roll
+
+saveRoll:
+    path: /save-roll/{roll}
+    controller: TrainingBusWeb\Controller\RollDiceController::saveRoll

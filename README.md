@@ -14,8 +14,9 @@
 ## How to interact with the app
 All interactions are available via browser at http://localhost:8000
 
-| Route | Description | Used bus  |
-| :---: | :---------: | :-------: |
-| /roll | Roll dice   | Query bus |
+| Route             | Description          | Used bus      |
+| :---------------: | :------------------: | :-----------: |
+| /roll             | Roll dice            | Query bus     |
+| /save-roll/{roll} | Saves dice rolling   | Command bus   |
 
 

@@ -25,4 +25,9 @@ class RollDiceController
 
         return new Response('RollDice response: ' . $result->result());
     }
+
+    public function saveRoll(string $roll): Response
+    {
+        return new Response($roll .' saved!');
+    }
 }
