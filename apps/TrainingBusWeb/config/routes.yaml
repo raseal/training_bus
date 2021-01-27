@@ -5,3 +5,7 @@ roll:
 saveRoll:
     path: /save-roll/{roll}
     controller: TrainingBusWeb\Controller\RollDiceController::saveRoll
+
+sendInvite:
+    path: /invite/{email}
+    controller: TrainingBusWeb\Controller\SendInviteController::sendInvite

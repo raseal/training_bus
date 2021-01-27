@@ -18,5 +18,6 @@ All interactions are available via browser at http://localhost:8000
 | :---------------: | :------------------: | :-----------: |
 | /roll             | Roll dice            | Query bus     |
 | /save-roll/{roll} | Saves dice rolling   | Command bus   |
+| /invite/{email}   | Sends email invite   | Event bus     |
 
 
